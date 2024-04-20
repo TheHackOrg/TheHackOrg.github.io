@@ -1,5 +1,5 @@
 <p align="center">
-   <a href="hackorg-website" href="https://hackorg.com/">
+   <a rel="hackorg-website" href="https://hackorg.com/">
    	<img src="https://hackorg.com/hackorg-github-logo-black-transparent.png" width="555">
    </a>
    </br>
