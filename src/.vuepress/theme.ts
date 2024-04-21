@@ -3,18 +3,22 @@ import { enNavbar, zhNavbar } from "./navbar/index.js";
 import { enSidebar, zhSidebar } from "./sidebar/index.js";
 
 export default hopeTheme({
-  hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
+
+  // pure mode
+  pure: true,
+
+  hostname: "https://hackorg.com",
 
   author: {
-    name: "Mr.Hope",
-    url: "https://mister-hope.com",
+    name: "GoogTech",
+    url: "https://goog.tech",
   },
 
   iconAssets: "fontawesome-with-brands",
 
-  logo: "https://theme-hope-assets.vuejs.press/logo.svg",
+  logo: "https://hackorg.com/thehackorg.org.profile.png",
 
-  repo: "vuepress-theme-hope/vuepress-theme-hope",
+  repo: "TheHackOrg/TheHackOrg.github.io",
 
   docsDir: "src",
 
@@ -26,12 +30,12 @@ export default hopeTheme({
       // sidebar
       sidebar: enSidebar,
 
-      footer: "Default footer",
+      footer: "",
 
       displayFooter: true,
 
       metaLocales: {
-        editLink: "Edit this page on GitHub",
+        editLink: "在 GitHub 上编辑此页",
       },
     },
 
@@ -58,8 +62,8 @@ export default hopeTheme({
 
   encrypt: {
     config: {
-      "/demo/encrypt.html": ["1234"],
-      "/zh/demo/encrypt.html": ["1234"],
+      "/demo/encrypt.html": ["hackorg.com"],
+      "/zh/demo/encrypt.html": ["hackorg.com"],
     },
   },
 
