@@ -72,10 +72,15 @@ export default hopeTheme({
     // You MUST generate and use your own comment service in production.
     comment: {
       provider: "Giscus",
-      repo: "vuepress-theme-hope/giscus-discussions",
-      repoId: "R_kgDOG_Pt2A",
+      repo: "TheHackOrg/TheHackOrg.github.io",
+      repoId: "R_kgDOLwsa-Q",
       category: "Announcements",
-      categoryId: "DIC_kwDOG_Pt2M4COD69",
+      categoryId: "DIC_kwDOLwsa-c4Cez-l",
+
+      // data-repo="TheHackOrg/TheHackOrg.github.io",
+      // data-repo-id="R_kgDOLwsa-Q",
+      // data-category="Announcements",
+      // data-category-id="DIC_kwDOLwsa-c4Cez-l",
     },
 
     components: {
