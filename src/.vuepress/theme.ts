@@ -68,6 +68,13 @@ export default hopeTheme({
   },
 
   plugins: {
+
+    // add search plugin
+    searchPro: true,
+    // searchPro: {
+    //   插件选项
+    // },
+
     // Note: This is for testing ONLY!
     // You MUST generate and use your own comment service in production.
     comment: {
