@@ -23,9 +23,9 @@ export default hopeTheme({
   docsDir: "src",
 
   // navbar
-  // navbar,
+  navbar,
   // 禁用导航栏
-  navbar: false,
+  // navbar: false,
 
   // sidebar
   // sidebar,
