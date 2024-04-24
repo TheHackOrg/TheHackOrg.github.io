@@ -1,6 +1,6 @@
 import { hopeTheme } from "vuepress-theme-hope";
-import { enNavbar, zhNavbar } from "./navbar/index.js";
-import { enSidebar, zhSidebar } from "./sidebar/index.js";
+import navbar from "./navbar.js";
+import sidebar from "./sidebar.js";
 
 export default hopeTheme({
 
@@ -22,53 +22,32 @@ export default hopeTheme({
 
   docsDir: "src",
 
-  locales: {
-    "/": {
-      // navbar
-      navbar: enNavbar,
+  // navbar
+  // navbar,
+  // 禁用导航栏
+  navbar: false,
 
-      // sidebar
-      sidebar: enSidebar,
+  // sidebar
+  // sidebar,
+  // 通过文件结构自动生成侧边栏
+  // https://theme-hope.vuejs.press/zh/guide/layout/sidebar.html
+  sidebar: "structure",
 
-      footer: "",
+  footer: "",
 
-      displayFooter: true,
-
-      metaLocales: {
-        editLink: "在 GitHub 上编辑此页",
-      },
-    },
-
-    /**
-     * Chinese locale config
-     */
-    "/zh/": {
-      // navbar
-      navbar: zhNavbar,
-
-      // sidebar
-      sidebar: zhSidebar,
-
-      footer: "默认页脚",
-
-      displayFooter: true,
-
-      // page meta
-      metaLocales: {
-        editLink: "在 GitHub 上编辑此页",
-      },
-    },
-  },
+  displayFooter: true,
 
   encrypt: {
     config: {
       "/demo/encrypt.html": ["hackorg.com"],
-      "/zh/demo/encrypt.html": ["hackorg.com"],
     },
   },
 
-  plugins: {
+  metaLocales: {
+    editLink: "在 GitHub 上编辑此页",
+  },
 
+  plugins: {
     // add search plugin
     searchPro: true,
     // searchPro: {
@@ -125,46 +104,46 @@ export default hopeTheme({
       tasklist: true,
       vPre: true,
 
-      // Install chart.js before enabling it
+      // install chart.js before enabling it
       // chart: true,
 
       // insert component easily
 
-      // Install echarts before enabling it
+      // install echarts before enabling it
       // echarts: true,
 
-      // Install flowchart.ts before enabling it
+      // install flowchart.ts before enabling it
       // flowchart: true,
 
       // gfm requires mathjax-full to provide tex support
       // gfm: true,
 
-      // Install katex before enabling it
+      // install katex before enabling it
       // katex: true,
 
-      // Install mathjax-full before enabling it
+      // install mathjax-full before enabling it
       // mathjax: true,
 
-      // Install mermaid before enabling it
+      // install mermaid before enabling it
       // mermaid: true,
 
       // playground: {
       //   presets: ["ts", "vue"],
       // },
 
-      // Install reveal.js before enabling it
+      // install reveal.js before enabling it
       // revealJs: {
       //   plugins: ["highlight", "math", "search", "notes", "zoom"],
       // },
 
-      // Install @vue/repl before enabling it
+      // install @vue/repl before enabling it
       // vuePlayground: true,
 
-      // Install sandpack-vue3 before enabling it
+      // install sandpack-vue3 before enabling it
       // sandpack: true,
     },
 
-    // Install @vuepress/plugin-pwa and uncomment these if you want a PWA
+    // install @vuepress/plugin-pwa and uncomment these if you want a PWA
     // pwa: {
     //   favicon: "/favicon.ico",
     //   cacheHTML: true,

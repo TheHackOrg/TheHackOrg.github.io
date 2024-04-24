@@ -1,7 +1,7 @@
 {
   "name": "hackorg.com",
   "version": "1.0.0",
-  "description": "Hack Org is a non-profit organization about hacking, join us !",
+  "description": "HackOrg.com",
   "license": "MIT",
   "type": "module",
   "scripts": {
@@ -12,9 +12,9 @@
   },
   "devDependencies": {
     "@vuepress/bundler-vite": "2.0.0-rc.9",
-    "vue": "^3.4.21",
+    "vue": "^3.4.23",
     "vuepress": "2.0.0-rc.9",
-    "vuepress-plugin-search-pro": "^2.0.0-rc.36",
-    "vuepress-theme-hope": "2.0.0-rc.36"
+    "vuepress-plugin-search-pro": "^2.0.0-rc.37",
+    "vuepress-theme-hope": "2.0.0-rc.37"
   }
 }
